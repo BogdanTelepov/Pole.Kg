@@ -9,5 +9,8 @@ import ru.app.responseModels.LoginResponseModel
 interface Api {
 
     @POST("login")
-    fun login(@Body headers:RequestBody): Call<LoginResponseModel>
+    fun login(@Body headers: RequestBody): Call<LoginResponseModel>
+
+    @POST("register")
+    fun register(@Body headers: RequestBody): Call<LoginResponseModel>
 }
